@@ -1,218 +1,478 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>Nyasha Chizampeni - Resume</title>
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyasha Chizampeni — Software Engineer</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 
 <body>
-  <div class="wraper">
-    <div class="container">
-      <div class="left-content p-30">
-        <div class="logo">
-          <a href="index.html">
-            <span>Nyasha</span>
-            <span>Chizampeni</span>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+
+        <div class="sidebar-profile">
+          <div class="profile-photo-wrap">
+            <img src="assets/img/image.jpeg" alt="Nyasha Chizampeni" class="profile-photo">
+          </div>
+          <div class="profile-name">Nyasha<br>Chizampeni</div>
+          <div class="profile-role">Software Engineer</div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Page navigation">
+          <a href="#about" class="nav-link">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>About</span>
+          </a>
+          <a href="#experience" class="nav-link">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+            <span>Experience</span>
+          </a>
+          <a href="#portfolio" class="nav-link">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <span>Portfolio</span>
+          </a>
+          <a href="#education" class="nav-link">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <span>Education</span>
+          </a>
+          <a href="#skills" class="nav-link">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>Skills</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-contact">
+          <div class="contact-item">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>+263 783 481 766</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>+230 54 963 335</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:nchizampeni@gmail.com">nchizampeni@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>Ebene, Mauritius · Harare, Zimbabwe</span>
+          </div>
+        </div>
+
+        <div class="sidebar-social">
+          <a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="social-btn download-btn" aria-label="Download CV" title="Download CV">
+            <i class="fa fa-download" aria-hidden="true"></i>
           </a>
         </div>
-        <div class="nav">
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Work">Experience</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#Skills">Skills</a></li>
-          </ul>
-        </div>
-        <div class="left-footer">
-          <div class="social-icons">
-            <ul>
-              <li><a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/"><i class="fa fa-linkedin-square"
-                    aria-hidden="true"></i></a></li>
-              <li><a href="https://github.com/nyashaChiza"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-          <div class="foot-contact">
-            <ul>
-              <li>+263 783 481 766 | +230 54 963 335</li>
-              <li>nchizampeni@gmail.com</li>
-              <li>Ebene, Mauritius · Harare, Zimbabwe</li>
-            </ul>
-          </div>
-          <div class="copy-rights">Copyright &copy;2025 NChiza</div>
-        </div>
-      </div>
 
-      <div class="main-content">
-        <!-- Home Section -->
-        <div class="section1 p-30" id="Home">
-          <div class="sec-title">
-            <div class="pg-sub-title">Home</div>
-            <div class="pg-title">Welcome</div>
+        <div class="sidebar-footer">&copy; 2025 Nyasha Chizampeni</div>
+
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="section-label">Profile</div>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Full-stack Software Engineer with <strong>5+ years of experience</strong> designing, developing, testing, and maintaining business-critical software systems — spanning automation, data-driven applications, and enterprise integrations.</p>
+            <p>Proven ability to collaborate with cross-functional teams to deliver scalable, well-documented solutions using Python, PHP, and JavaScript, with a consistent track record of improving system reliability, performance, and operational efficiency through cloud-based deployments.</p>
+            <p>I thrive at the intersection of engineering, leadership, and innovation — helping organisations streamline processes, automate complex workflows, and unlock data-driven insights across finance, ERP, and workforce management domains.</p>
           </div>
-          <div class="d-flex-align-center">
-            <div class="user-img flex-1 rounded"><img src="assets/img/image.jpeg" class="img-fluid rounded"></div>
-            <div class="user-profile flex-1">
-              <div class="pro-details">
-                <div class="sm-text">Hello, I am</div>
-                <div class="name">Nyasha Chizampeni</div>
-                <div class="role">Software Engineer </div>
+          <div class="competency-card">
+            <h3 class="competency-heading">Key Competencies</h3>
+            <div class="competency-list">
+              <div class="competency-item">
+                <i class="fa fa-code" aria-hidden="true"></i>
+                <span>Software Development</span>
               </div>
-              <div class="text">
-                Results-driven Software Engineer with expertise in Python, JavaScript, PHP, and Java. Skilled in
-                building automation systems, enterprise integrations, and data-driven applications. Experienced in
-                leading cross-functional teams, scaling solutions across finance, ERP, and workforce management
-                domains, and driving innovation with machine learning and cloud-native deployments.
+              <div class="competency-item">
+                <i class="fa fa-database" aria-hidden="true"></i>
+                <span>Data Engineering &amp; Machine Learning</span>
               </div>
-              <div class="pr-list">
-                <ul>
-                  <li><i class="fa fa-phone" aria-hidden="true"></i> +263 783 481 766</li>
-                  <li><i class="fa fa-envelope" aria-hidden="true"></i> nchizampeni@gmail.com</li>
-                  <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ebene, Mauritius · Harare, Zimbabwe</li>
-                </ul>
+              <div class="competency-item">
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <span>Project Management</span>
               </div>
-              <div class="social-icons-head">
-                <ul>
-                  <li><a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/"><i class="fa fa-linkedin-square"
-                        aria-hidden="true"></i></a></li>
-                  <li><a href="https://github.com/nyashaChiza"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                </ul>
+              <div class="competency-item">
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <span>System Integration &amp; Automation</span>
+              </div>
+              <div class="competency-item">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <span>Mobile Development</span>
+              </div>
+              <div class="competency-item">
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <span>Mentorship &amp; Collaboration</span>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- About Section -->
-        <div class="section1 p-30" id="About">
-          <div class="sec-title">
-            <div class="pg-sub-title">About Me</div>
-            <div class="pg-title">Profile</div>
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="section-label">Work History</div>
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">Software Engineer</h3>
+                  <div class="company-name">Cybernaptics</div>
+                </div>
+                <span class="date-badge current">Mar 2025 – Present</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Designed, implemented, and maintained end-to-end automation solutions, reviewing existing systems and enhancing workflows using modern integration and low-code platforms.</li>
+                <li>Collaborated closely with business analysts, DevOps, and QA teams to translate business requirements into reliable, maintainable technical solutions.</li>
+                <li>Performed system analysis, testing, and continuous improvement, ensuring solutions were technically sound, scalable, and aligned with organisational objectives.</li>
+              </ul>
+            </div>
           </div>
-          <div class="text">
-            <p>I am a full-stack software engineer with strong experience in automation, data engineering, and mobile
-              development. Over the years, I’ve led high-performing teams, delivered scalable integrations, and built
-              cloud-first systems that power businesses across Africa and beyond. I thrive at the intersection of
-              engineering, leadership, and innovation — helping organizations streamline processes and unlock data-driven
-              insights.</p>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">Software Developer</h3>
+                  <div class="company-name">UNICAF University</div>
+                </div>
+                <span class="date-badge">Sept 2024 – Mar 2025</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Developed and maintained scalable software solutions using PHP and Python, deploying and supporting systems on AWS with an emphasis on reliability and performance.</li>
+                <li>Implemented and supported CI/CD pipelines using GitHub Actions, ensuring controlled deployments, versioning, and consistent delivery across environments.</li>
+                <li>Conducted research, system integration, testing, and maintenance using Docker and Celery, collaborating on project planning and delivery to meet business requirements.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">Software Engineer</h3>
+                  <div class="company-name">National Dental Support</div>
+                </div>
+                <span class="date-badge">May 2024 – Jul 2024</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Designed and delivered API integrations and automated reporting solutions using Python and JavaScript to improve data flow and operational efficiency.</li>
+                <li>Conducted exploratory data analysis, system validation, and issue resolution to ensure accuracy, reliability, and business relevance of outputs.</li>
+                <li>Supported software implementation and user adoption through system testing, deployment support, and client training.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">Senior Software Engineer &amp; Team Lead</h3>
+                  <div class="company-name">Petalm Africa</div>
+                </div>
+                <span class="date-badge">Nov 2021 – Aug 2024</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Designed, developed, tested, and maintained software systems aligned with business requirements, producing clean, efficient code and well-structured architectures across the full SDLC.</li>
+                <li>Performed system analysis, code reviews, debugging, and validation testing; automated manual processes using scripting and tools while ensuring reliability, performance, and maintainability.</li>
+                <li>Collaborated with cross-functional teams to gather requirements, implement enhancements, document system workflows, and keep solutions current with evolving technologies.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">Web Developer</h3>
+                  <div class="company-name">AquaGuard Engineering</div>
+                </div>
+                <span class="date-badge">Jul 2020 – Aug 2021</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Developed and deployed web applications using PHP and MySQL, improving client engagement and platform reliability.</li>
+                <li>Maintained and enhanced existing systems, contributing to improved user experience and operational performance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="job-header">
+                <div class="job-meta">
+                  <h3 class="job-title">IT Intern</h3>
+                  <div class="company-name">ZETDC</div>
+                </div>
+                <span class="date-badge">Aug 2019 – Aug 2020</span>
+              </div>
+              <ul class="job-bullets">
+                <li>Supported IT infrastructure management and contributed to the implementation of an inventory management system.</li>
+                <li>Assisted with hardware/software troubleshooting and provided technical support across internal teams.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="section">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-grid">
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+            <h3>Facial Recognition System</h3>
+            <p>Django-based facial recognition application leveraging machine learning for identity verification and access control — deployed for real-world use cases.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+            </div>
+            <h3>Gas Dispensary Management PWA</h3>
+            <p>Progressive Web Application for gas dispensary management with offline support, real-time transaction tracking, and automated reporting dashboards.</p>
+            <div class="portfolio-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Django</span>
+              <span class="tag">PWA</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">
+              <i class="fa fa-medkit" aria-hidden="true"></i>
+            </div>
+            <h3>Medical Insurance ERP Integration</h3>
+            <p>End-to-end ERP workflow integrations for medical insurance providers, automating claims processing, compliance checks, and reporting pipelines.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SnapLogic</span>
+              <span class="tag">API Integration</span>
+            </div>
+          </div>
+
+          <div class="portfolio-card">
+            <div class="portfolio-icon">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <h3>Workforce Automation Pipeline</h3>
+            <p>Python-driven automation and data engineering pipelines for workforce management and payroll reporting — eliminating significant manual processing overhead.</p>
+            <div class="portfolio-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Celery</span>
+              <span class="tag">Redis</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="portfolio-cta">
+          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" class="btn-outline">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            View All Projects on GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-item">
+          <div class="edu-icon">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="edu-content">
+            <h3>Bachelor of Information Technology</h3>
+            <div class="edu-institution">Harare Institute of Technology</div>
+            <div class="edu-date">2017 – 2021</div>
           </div>
         </div>
 
-        <!-- Work Experience -->
-        <div class="section1 p-30" id="Work">
-          <div class="sec-title">
-            <div class="pg-sub-title">Work Profile</div>
-            <div class="pg-title">Experience</div>
+        <h3 class="cert-heading">Certifications</h3>
+        <div class="cert-grid">
+          <div class="cert-item">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <span>Data Analysis with Python</span>
           </div>
-          <div class="text">
-            
-            <br />
-            <h2>Software Engineer - Cybernaptics (Mar 2025 – Present)</h2>
-            <ul>
-              <li>Designed and delivered API integrations to connect ERP and cloud platforms, saving manual effort.</li>
-              <li>Automated workforce and payroll reporting pipelines using Python, improving reporting efficiency.</li>
-              <li>Deployed scalable backend systems with PHP and Python supporting large concurrent user bases.</li>
-              <li>Championed Docker adoption, Git workflows, and Agile delivery practices.</li>
-            </ul>
-            <br />
-            <h2>Software Engineer - National Dental Support (May 2024 – Jul 2024)</h2>
-            <ul>
-              <li>Developed Python/JavaScript automation scripts reducing reporting time.</li>
-              <li>Provided exploratory data analysis and training that boosted client adoption rates.</li>
-              <li>Supported ERP module implementation across multiple clinics, enhancing operational efficiency.</li>
-            </ul>
-            <br />
-            <h2>Software Developer - UNICAF University (Sept 2024 – Mar 2025)</h2>
-            <ul>
-              <li>Built scalable solutions using PHP, Python, and AWS to handle daily transactions.</li>
-              <li>Implemented CI/CD pipelines with GitHub Actions, reducing deployment issues.</li>
-              <li>Integrated Docker and Celery to support reliable asynchronous workflows.</li>
-            </ul>
-            <br />
-            <h2>Senior Software Engineer / Team Lead - Petalm Africa (Nov 2021 – Aug 2024)</h2>
-            <ul>
-              <li>Lead a team of engineers delivering enterprise automation and integration solutions.</li>
-              <li>Architect and deploy end-to-end workflows reducing manual processes by significant hours monthly.</li>
-              <li>Introduce Agile practices and CI/CD pipelines, cutting release cycles and improving quality.</li>
-              <li>Mentor junior engineers, improving onboarding and code quality.</li>
-            </ul>
-            <br />
-            <h2>Web Developer - AquaGuard Engineering (Jul 2020 – Aug 2021)</h2>
-            <ul>
-              <li>Developed and deployed web tools to improve client engagement.</li>
-              <li>Utilized PHP and MySQL for web applications, ensuring reliability and performance.</li>
-            </ul>
-            <br />
-            <h2>IT Intern - ZETDC (Aug 2019 – Aug 2020)</h2>
-            <ul>
-              <li>Supported IT infrastructure and contributed to inventory management system implementation.</li>
-            </ul>
+          <div class="cert-item">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <span>SQL Certification</span>
+          </div>
+          <div class="cert-item">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <span>Data Warehouse Certification</span>
+          </div>
+          <div class="cert-item">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            <span>JavaScript Algorithms &amp; Data Structures</span>
           </div>
         </div>
+      </section>
 
-        <!-- Portfolio -->
-        <div class="section1 p-30" id="Portfolio">
-          <div class="sec-title">
-            <div class="pg-sub-title">Portfolio</div>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section-label">Technical Profile</div>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Programming Languages</h3>
+            <div class="tags">
+              <span class="tag primary">Python</span>
+              <span class="tag primary">PHP</span>
+              <span class="tag primary">JavaScript</span>
+              <span class="tag primary">Dart</span>
+              <span class="tag primary">Java</span>
+              <span class="tag primary">C</span>
+            </div>
           </div>
-          <div class="text">
-            <p>My portfolio showcases projects across automation, API development, ERP systems, mobile applications,
-              and machine learning. Highlights include a Django-based facial recognition system, a PWA for gas dispensary
-              management, and ERP integrations for medical insurance workflows.</p>
-            <p>Explore my full body of work on <a href="https://github.com/nyashaChiza">GitHub</a>. Notable projects and professional certifications are listed on my <a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/" target="_blank">LinkedIn</a> profile.</p>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+            <div class="tags">
+              <span class="tag">Django</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">Flutter</span>
+            </div>
           </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Data &amp; Machine Learning</h3>
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Apache</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">DevOps &amp; Cloud</h3>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Huawei Cloud</span>
+              <span class="tag">Celery</span>
+              <span class="tag">Redis</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Integration Platforms</h3>
+            <div class="tags">
+              <span class="tag">SnapLogic</span>
+              <span class="tag">NewgenOne</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Hard Skills</h3>
+            <div class="tags">
+              <span class="tag">Version Control</span>
+              <span class="tag">API Development</span>
+              <span class="tag">System Integration</span>
+              <span class="tag">Software Testing</span>
+              <span class="tag">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3 class="skill-group-title">Soft Skills</h3>
+            <div class="tags">
+              <span class="tag soft">Leadership</span>
+              <span class="tag soft">Problem Solving</span>
+              <span class="tag soft">Innovation</span>
+              <span class="tag soft">Critical Thinking</span>
+              <span class="tag soft">Adaptability</span>
+              <span class="tag soft">Mentorship</span>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <!-- Education -->
-<div class="section1 p-30" id="Education">
-<div class="sec-title">
-<div class="pg-sub-title">Education</div>
-</div>
-<div class="text">
-<p>Bachelor of Information Technology – Harare Institute of Technology (2017 – 2021).</p>
-<p>Certifications:</p>
-<ul>
-<li>Data Analysis with Python</li>
-<li>SQL Certification</li>
-<li>Data Warehouse Certification</li>
-<li>JavaScript Algorithms and Data Structures Certification</li>
-</ul>
-
-</div>
-</div>
-          
-        <!-- Skills -->
-        <div class="section1 p-30" id="Skills">
-          <div class="sec-title">
-            <div class="pg-sub-title">Skills</div>
-          </div>
-          <div class="text">
-            <h3>Languages:</h3>
-            <p>Python, PHP, JavaScript (Node.js, React, Next.js), Dart, Java, C</p>
-
-            <h3>Frameworks:</h3>
-            <p>Django, FastAPI, Flask, Laravel, Flutter</p>
-
-            <h3>Data & ML:</h3>
-            <p>PyTorch, TensorFlow, Scikit-learn, Redis, Apache</p>
-
-            <h3>DevOps & Cloud:</h3>
-            <p>Docker, Celery, GitHub Actions, AWS, Huawei Cloud</p>
-
-            <h3>Integration Platforms:</h3>
-            <p>SnapLogic, NewgenOne</p>
-
-            <h3>Soft Skills:</h3>
-            <p>Leadership, Mentorship, Problem-Solving, Critical Thinking, Adaptability</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
+    </main>
   </div>
-</body>
 
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Scrollspy — observe sections within the scrollable .main container
+    const mainEl = document.querySelector('.main');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    }, { root: mainEl, threshold: 0.35 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
 </html>
