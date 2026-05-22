@@ -689,3 +689,156 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .main::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ============================================
+   MOBILE HEADER
+   ============================================ */
+.mobile-header {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #111827;
+  z-index: 200;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-header-name {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f9fafb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mobile-download { font-size: 13px; }
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #f9fafb;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* Overlay backdrop */
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  backdrop-filter: blur(1px);
+}
+
+.sidebar-overlay.active { display: block; }
+
+/* ============================================
+   RESPONSIVE — TABLET & MOBILE (≤ 768px)
+   ============================================ */
+@media (max-width: 768px) {
+  body { overflow-y: auto; height: auto; }
+
+  .layout { display: block; height: auto; min-height: 100vh; }
+
+  .mobile-header { display: flex; }
+
+  /* Sidebar becomes a fixed slide-in drawer */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 280px;
+    min-width: 280px;
+    z-index: 160;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .sidebar.open { transform: translateX(0); }
+
+  /* Main scrolls naturally in the document */
+  .main {
+    overflow-y: visible;
+    padding-top: 56px;
+  }
+
+  /* Section spacing */
+  .section {
+    margin: 12px 12px 0;
+    padding: 28px 20px;
+  }
+
+  .section:last-child { margin-bottom: 12px; }
+
+  .section-title { font-size: 22px; }
+
+  /* Collapse two-column grids */
+  .about-grid,
+  .portfolio-grid,
+  .cert-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid { gap: 24px; }
+  .skills-grid { gap: 20px; }
+
+  /* Job header stack on narrow screens */
+  .job-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  /* Timeline */
+  .timeline { padding-left: 22px; }
+  .timeline-marker { left: -22px; }
+}
+
+/* ============================================
+   RESPONSIVE — SMALL PHONES (≤ 480px)
+   ============================================ */
+@media (max-width: 480px) {
+  .section { margin: 10px 10px 0; padding: 24px 16px; }
+  .section:last-child { margin-bottom: 10px; }
+
+  .section-title { font-size: 20px; margin-bottom: 22px; }
+
+  .profile-photo-wrap { width: 88px; height: 88px; }
+
+  .profile-name { font-size: 17px; }
+
+  .portfolio-card { padding: 18px; }
+
+  .competency-card { padding: 16px; }
+
+  .timeline-card { padding: 16px 16px; }
+}

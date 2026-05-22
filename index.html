@@ -14,6 +14,21 @@
 </head>
 
 <body>
+
+  <!-- Mobile top bar -->
+  <div class="mobile-header">
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="mobile-header-name">Nyasha Chizampeni</div>
+    <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="social-btn mobile-download" aria-label="Download CV">
+      <i class="fa fa-download" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="sidebar-overlay" aria-hidden="true"></div>
+
   <div class="layout">
 
     <!-- Sidebar -->
@@ -453,25 +468,65 @@
       });
     });
 
-    // Scrollspy — observe sections within the scrollable .main container
+    // Scrollspy — use .main as root on desktop; viewport on mobile
     const mainEl = document.querySelector('.main');
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + entry.target.id) {
-              link.classList.add('active');
-            }
-          });
-        }
-      });
-    }, { root: mainEl, threshold: 0.35 });
+    let scrollObserver;
+    function setupScrollspy() {
+      if (scrollObserver) scrollObserver.disconnect();
+      const isMobile = window.innerWidth <= 768;
+      scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === '#' + entry.target.id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }, { root: isMobile ? null : mainEl, threshold: 0.35 });
+      sections.forEach(s => scrollObserver.observe(s));
+    }
+    setupScrollspy();
+    window.addEventListener('resize', setupScrollspy);
 
-    sections.forEach(s => observer.observe(s));
+    // Mobile sidebar toggle
+    const hamburger = document.querySelector('.hamburger');
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+
+    function openSidebar() {
+      sidebar.classList.add('open');
+      overlay.classList.add('active');
+      hamburger.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+
+    // Close sidebar after a nav link tap on mobile
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) closeSidebar();
+      });
+    });
   </script>
 
 </body>
