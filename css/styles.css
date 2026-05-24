@@ -477,6 +477,32 @@ img { max-width: 100%; height: auto; display: block; }
   transform: translateY(-2px);
 }
 
+.portfolio-card.featured {
+  background: linear-gradient(135deg, #eef2ff 0%, #f5f3ff 100%);
+  border: 2px solid #818cf8;
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.portfolio-card.featured:hover {
+  border-color: #6366f1;
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.15);
+  transform: translateY(-3px);
+}
+
+.portfolio-badge {
+  display: inline-block;
+  background: #10b981;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
 .portfolio-icon {
   display: flex;
   align-items: center;
@@ -488,6 +514,14 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 10px;
   font-size: 16px;
   margin-bottom: 13px;
+}
+
+.portfolio-icon.live {
+  background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
 }
 
 .portfolio-card h3 {
@@ -510,6 +544,38 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-bottom: 14px;
+}
+
+.portfolio-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.portfolio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-link:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.portfolio-link i {
+  font-size: 11px;
 }
 
 .portfolio-cta { text-align: center; }
