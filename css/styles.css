@@ -442,6 +442,7 @@ a:focus-visible, button:focus-visible {
 .work-lg .work-body h3 { font-size: 28px; }
 .work-lg .work-body .tags { margin: 0 0 24px; }
 .work-lg .pill { align-self: flex-start; }
+.work-links { display: flex; flex-wrap: wrap; gap: 12px; }
 
 .work-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-bottom: 14px; }
 .work-role { font-size: 13px; font-weight: 500; color: var(--muted); }
