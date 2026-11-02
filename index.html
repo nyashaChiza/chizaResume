@@ -6,615 +6,413 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nyasha Chizampeni — Software Engineer</title>
   <meta name="description" content="Nyasha Chizampeni, full-stack software engineer: automation, data platforms and mobile apps. Creator of Terraform and Refilla.">
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:title" content="Nyasha Chizampeni — Software Engineer">
   <meta property="og:description" content="Full-stack engineer building reliable software for finance, operations and mobile.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 
 <body>
 
-  <!-- Mobile top bar -->
-  <div class="mobile-header">
-    <button class="hamburger" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="mobile-header-name">Nyasha Chizampeni</div>
-    <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="social-btn mobile-download" aria-label="Download CV">
-      <i class="fa fa-download" aria-hidden="true"></i>
-    </a>
-  </div>
-  <div class="sidebar-overlay" aria-hidden="true"></div>
-
-  <div class="layout">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="sidebar-inner">
-
-        <div class="sidebar-profile">
-          <div class="profile-photo-wrap">
-            <img src="assets/img/image.jpeg" alt="Nyasha Chizampeni" class="profile-photo">
-          </div>
-          <div class="profile-name">Nyasha<br>Chizampeni</div>
-          <div class="profile-role">Software Engineer</div>
-        </div>
-
-        <nav class="sidebar-nav" aria-label="Page navigation">
-          <a href="#home" class="nav-link">
-            <i class="fa fa-home" aria-hidden="true"></i>
-            <span>Home</span>
-          </a>
-          <a href="#about" class="nav-link">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <span>About</span>
-          </a>
-          <a href="#experience" class="nav-link">
-            <i class="fa fa-briefcase" aria-hidden="true"></i>
-            <span>Experience</span>
-          </a>
-          <a href="#portfolio" class="nav-link">
-            <i class="fa fa-code" aria-hidden="true"></i>
-            <span>Portfolio</span>
-          </a>
-          <a href="#education" class="nav-link">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <span>Education</span>
-          </a>
-          <a href="#skills" class="nav-link">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-            <span>Skills</span>
-          </a>
-        </nav>
-
-        <div class="sidebar-contact">
-          <div class="contact-item">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <span>+263 783 481 766</span>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <span>+230 54 963 335</span>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-            <a href="mailto:nchizampeni@gmail.com">nchizampeni@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <span>Ebene, Mauritius · Harare, Zimbabwe</span>
-          </div>
-        </div>
-
-        <div class="sidebar-social">
-          <a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="social-btn download-btn" aria-label="Download CV" title="Download CV">
-            <i class="fa fa-download" aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <div class="sidebar-footer">&copy; 2026 Nyasha Chizampeni</div>
-
+  <!-- Top navigation -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">NC</span>
+        <span class="brand-text">
+          <strong>Nyasha Chizampeni</strong>
+          <small>Software Engineer</small>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Page navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#education" class="nav-link">Education</a>
+      </nav>
+      <div class="topbar-actions">
+        <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="pill pill-dark">Download CV</a>
+        <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
       </div>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="main">
+  <main>
 
-      <!-- Hero -->
-      <section id="home" class="section hero">
-        <div class="hero-status"><span class="status-dot"></span> Open to new opportunities</div>
-        <h1 class="hero-title">Building reliable software for <span class="accent">finance, operations and mobile.</span></h1>
-        <p class="hero-sub">I'm Nyasha, a full-stack software engineer with 5+ years shipping automation, data-driven platforms and mobile apps across Africa.</p>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="ghost" aria-hidden="true">PORTFOLIO</div>
+      <div class="container hero-inner">
+        <div class="hero-badge"><span class="dot"></span> Open to new opportunities</div>
+        <div class="hero-visual">
+          <img src="assets/img/image.jpeg" alt="Nyasha Chizampeni" class="hero-photo">
+          <div class="hero-hello">Hello<span>.</span></div>
+        </div>
+        <p class="hero-sub">I'm <strong>Nyasha</strong>, a full-stack engineer building reliable software for finance, operations and mobile, based in Mauritius and Zimbabwe.</p>
         <div class="hero-actions">
-          <a href="#portfolio" class="btn-primary"><i class="fa fa-code" aria-hidden="true"></i> View my work</a>
-          <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" class="btn-outline"><i class="fa fa-download" aria-hidden="true"></i> Download CV</a>
+          <a href="#portfolio" class="pill pill-dark">Explore my work <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          <a href="mailto:nchizampeni@gmail.com" class="pill pill-light">Get in touch</a>
         </div>
-        <div class="stats">
-          <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Years experience</div></div>
-          <div class="stat"><div class="stat-num">7</div><div class="stat-label">Roles &amp; teams</div></div>
-          <div class="stat"><div class="stat-num">2</div><div class="stat-label">Products shipped</div></div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About -->
-      <section id="about" class="section">
-        <div class="section-label">Profile</div>
-        <h2 class="section-title">About Me</h2>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="eyebrow">About me</div>
+        <p class="lead">A full-stack engineer with <strong>5+ years</strong> designing and shipping business-critical systems. I turn complex workflows into dependable software across automation, data platforms and mobile apps.</p>
+
         <div class="about-grid">
-          <div class="about-text">
-            <p>Full-stack Software Engineer with <strong>5+ years of experience</strong> designing, developing, testing, and maintaining business-critical software systems — spanning automation, data-driven applications, and enterprise integrations.</p>
-            <p>Proven ability to collaborate with cross-functional teams to deliver scalable, well-documented solutions using Python, PHP, and JavaScript, with a consistent track record of improving system reliability, performance, and operational efficiency through cloud-based deployments.</p>
-            <p>I thrive at the intersection of engineering, leadership, and innovation — helping organisations streamline processes, automate complex workflows, and unlock data-driven insights across finance, ERP, and workforce management domains.</p>
-          </div>
-          <div class="competency-card">
-            <h3 class="competency-heading">Key Competencies</h3>
-            <div class="competency-list">
-              <div class="competency-item">
-                <i class="fa fa-code" aria-hidden="true"></i>
-                <span>Software Development</span>
+          <div class="about-copy">
+            <p>I collaborate with cross-functional teams to deliver scalable, well-documented solutions in Python, PHP and JavaScript, improving reliability, performance and operational efficiency through cloud-based deployments.</p>
+            <p>I thrive at the intersection of engineering, leadership and innovation, helping organisations streamline processes, automate complex workflows and unlock data-driven insight across finance, ERP and workforce management.</p>
+            <div class="stat-row">
+              <div class="stat-card dark">
+                <div class="stat-num">5+</div>
+                <div class="stat-label">Years of experience</div>
               </div>
-              <div class="competency-item">
-                <i class="fa fa-database" aria-hidden="true"></i>
-                <span>Data Engineering &amp; Machine Learning</span>
+              <div class="stat-card">
+                <div class="stat-num">7</div>
+                <div class="stat-label">Roles &amp; teams</div>
               </div>
-              <div class="competency-item">
-                <i class="fa fa-tasks" aria-hidden="true"></i>
-                <span>Project Management</span>
-              </div>
-              <div class="competency-item">
-                <i class="fa fa-link" aria-hidden="true"></i>
-                <span>System Integration &amp; Automation</span>
-              </div>
-              <div class="competency-item">
-                <i class="fa fa-mobile" aria-hidden="true"></i>
-                <span>Mobile Development</span>
-              </div>
-              <div class="competency-item">
-                <i class="fa fa-users" aria-hidden="true"></i>
-                <span>Mentorship &amp; Collaboration</span>
+              <div class="stat-card">
+                <div class="stat-num">2</div>
+                <div class="stat-label">Products shipped</div>
               </div>
             </div>
           </div>
+          <ul class="competencies">
+            <li><i class="fa fa-code" aria-hidden="true"></i> Software Development</li>
+            <li><i class="fa fa-database" aria-hidden="true"></i> Data Engineering &amp; Machine Learning</li>
+            <li><i class="fa fa-link" aria-hidden="true"></i> System Integration &amp; Automation</li>
+            <li><i class="fa fa-mobile" aria-hidden="true"></i> Mobile Development</li>
+            <li><i class="fa fa-tasks" aria-hidden="true"></i> Project Management</li>
+            <li><i class="fa fa-users" aria-hidden="true"></i> Mentorship &amp; Collaboration</li>
+          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Experience -->
-      <section id="experience" class="section">
-        <div class="section-label">Work History</div>
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
+    <!-- Experience -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="eyebrow">Work history</div>
+        <h2 class="title">Explore my journey</h2>
 
-          <div class="timeline-item">
-            <div class="timeline-marker current"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Founder &amp; Lead Developer</h3>
-                  <div class="company-name">Refilla</div>
-                </div>
-                <span class="date-badge current">2026 – Present</span>
-              </div>
-              <ul class="job-bullets">
+        <div class="rows">
+
+          <article class="row">
+            <div class="row-date">2026 – Present</div>
+            <div class="row-main">
+              <h3>Founder &amp; Lead Developer</h3>
+              <div class="row-company">Refilla</div>
+              <ul>
                 <li>Founded and lead development of Refilla, a booth app and admin portal that helps LP gas retailers in Zimbabwe track every kg sold, every shift and every dollar across all their booths.</li>
                 <li>Designed an offline-first Android booth app for low-cost phones, covering sales by kg or amount, shift cash-ups, deliveries and requests to head office, with automatic sync when signal returns.</li>
                 <li>Built the multi-tenant admin portal with live sales and cash visibility, gas-loss alerts, centralised pricing, and multi-currency (US$/ZWG) reporting aligned to ZERA and ZIMRA compliance.</li>
                 <li>Own the product end to end: architecture, delivery, go-to-market and the 2027 pilot programme with LP gas companies in Harare.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker current"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Software Engineer</h3>
-                  <div class="company-name">Cybernaptics</div>
-                </div>
-                <span class="date-badge current">Mar 2025 – Present</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">Mar 2025 – Present</div>
+            <div class="row-main">
+              <h3>Software Engineer</h3>
+              <div class="row-company">Cybernaptics</div>
+              <ul>
                 <li>Designed, implemented, and maintained end-to-end automation solutions, reviewing existing systems and enhancing workflows using modern integration and low-code platforms.</li>
                 <li>Collaborated closely with business analysts, DevOps, and QA teams to translate business requirements into reliable, maintainable technical solutions.</li>
                 <li>Performed system analysis, testing, and continuous improvement, ensuring solutions were technically sound, scalable, and aligned with organisational objectives.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Software Developer</h3>
-                  <div class="company-name">UNICAF University</div>
-                </div>
-                <span class="date-badge">Sept 2024 – Mar 2025</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">Sept 2024 – Mar 2025</div>
+            <div class="row-main">
+              <h3>Software Developer</h3>
+              <div class="row-company">UNICAF University</div>
+              <ul>
                 <li>Developed and maintained scalable software solutions using PHP and Python, deploying and supporting systems on AWS with an emphasis on reliability and performance.</li>
                 <li>Implemented and supported CI/CD pipelines using GitHub Actions, ensuring controlled deployments, versioning, and consistent delivery across environments.</li>
                 <li>Conducted research, system integration, testing, and maintenance using Docker and Celery, collaborating on project planning and delivery to meet business requirements.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Software Engineer</h3>
-                  <div class="company-name">National Dental Support</div>
-                </div>
-                <span class="date-badge">May 2024 – Jul 2024</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">May 2024 – Jul 2024</div>
+            <div class="row-main">
+              <h3>Software Engineer</h3>
+              <div class="row-company">National Dental Support</div>
+              <ul>
                 <li>Designed and delivered API integrations and automated reporting solutions using Python and JavaScript to improve data flow and operational efficiency.</li>
                 <li>Conducted exploratory data analysis, system validation, and issue resolution to ensure accuracy, reliability, and business relevance of outputs.</li>
                 <li>Supported software implementation and user adoption through system testing, deployment support, and client training.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Senior Software Engineer &amp; Team Lead</h3>
-                  <div class="company-name">Petalm Africa</div>
-                </div>
-                <span class="date-badge">Nov 2021 – Aug 2024</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">Nov 2021 – Aug 2024</div>
+            <div class="row-main">
+              <h3>Senior Software Engineer &amp; Team Lead</h3>
+              <div class="row-company">Petalm Africa</div>
+              <ul>
                 <li>Designed, developed, tested, and maintained software systems aligned with business requirements, producing clean, efficient code and well-structured architectures across the full SDLC.</li>
                 <li>Performed system analysis, code reviews, debugging, and validation testing; automated manual processes using scripting and tools while ensuring reliability, performance, and maintainability.</li>
                 <li>Collaborated with cross-functional teams to gather requirements, implement enhancements, document system workflows, and keep solutions current with evolving technologies.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">Web Developer</h3>
-                  <div class="company-name">AquaGuard Engineering</div>
-                </div>
-                <span class="date-badge">Jul 2020 – Aug 2021</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">Jul 2020 – Aug 2021</div>
+            <div class="row-main">
+              <h3>Web Developer</h3>
+              <div class="row-company">AquaGuard Engineering</div>
+              <ul>
                 <li>Developed and deployed web applications using PHP and MySQL, improving client engagement and platform reliability.</li>
                 <li>Maintained and enhanced existing systems, contributing to improved user experience and operational performance.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-card">
-              <div class="job-header">
-                <div class="job-meta">
-                  <h3 class="job-title">IT Intern</h3>
-                  <div class="company-name">ZETDC</div>
-                </div>
-                <span class="date-badge">Aug 2019 – Aug 2020</span>
-              </div>
-              <ul class="job-bullets">
+          <article class="row">
+            <div class="row-date">Aug 2019 – Aug 2020</div>
+            <div class="row-main">
+              <h3>IT Intern</h3>
+              <div class="row-company">ZETDC</div>
+              <ul>
                 <li>Supported IT infrastructure management and contributed to the implementation of an inventory management system.</li>
                 <li>Assisted with hardware/software troubleshooting and provided technical support across internal teams.</li>
               </ul>
             </div>
-          </div>
+          </article>
 
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Portfolio -->
-      <section id="portfolio" class="section">
-        <div class="section-label">Projects</div>
-        <h2 class="section-title">Portfolio</h2>
-        <div class="portfolio-grid">
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="eyebrow">Selected projects</div>
+        <h2 class="title">Latest works</h2>
 
-          <div class="portfolio-card featured">
-            <div class="portfolio-icon live">
-              <i class="fa fa-fire" aria-hidden="true"></i>
-            </div>
-            <div class="portfolio-badge pilot">2027 Pilot Programme</div>
-            <h3><a href="https://www.refillagas.com/" target="_blank" rel="noopener">Refilla — LP Gas Booth App &amp; Admin Portal</a></h3>
-            <div class="portfolio-role">Founder &amp; Lead Developer</div>
-            <p>Booth app and admin portal for LP gas retailers in Zimbabwe. Booth staff sell by kg or amount, run shifts and cash-ups, and log deliveries on low-cost Android phones, offline-first with sync. Owners get live sales, kg and cash across every booth, gas-loss alerts, centralised pricing, and reports built for US$/ZWG, ZERA and ZIMRA compliance.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Android</span>
-              <span class="tag">Offline-first</span>
-              <span class="tag">Admin Portal</span>
-              <span class="tag">Multi-currency</span>
-              <span class="tag">Multi-tenant</span>
-              <span class="tag">Fintech / Compliance</span>
-            </div>
-            <div class="portfolio-links">
-              <a href="https://www.refillagas.com/" target="_blank" rel="noopener" class="portfolio-link"><i class="fa fa-external-link" aria-hidden="true"></i> Visit site</a>
-              <a href="https://app.refillagas.com/" target="_blank" rel="noopener" class="portfolio-link"><i class="fa fa-desktop" aria-hidden="true"></i> Admin portal</a>
-            </div>
-          </div>
+        <div class="works">
 
-          <div class="portfolio-card featured">
-            <div class="portfolio-icon live">
-              <i class="fa fa-mobile" aria-hidden="true"></i>
+          <article class="work work-lg tone-sand">
+            <div class="work-visual"><i class="fa fa-fire" aria-hidden="true"></i></div>
+            <div class="work-body">
+              <div class="work-meta"><span class="status status-pilot">2027 Pilot Programme</span><span class="work-role">Founder &amp; Lead Developer</span></div>
+              <h3><a href="https://www.refillagas.com/" target="_blank" rel="noopener">Refilla — LP Gas Booth App &amp; Admin Portal</a></h3>
+              <p>Booth app and admin portal for LP gas retailers in Zimbabwe. Booth staff sell by kg or amount, run shifts and cash-ups, and log deliveries on low-cost Android phones, offline-first with sync. Owners get live sales, kg and cash across every booth, gas-loss alerts, centralised pricing, and reports built for US$/ZWG, ZERA and ZIMRA compliance.</p>
+              <div class="tags">
+                <span class="tag">Android</span><span class="tag">Offline-first</span><span class="tag">Admin Portal</span>
+                <span class="tag">Multi-currency</span><span class="tag">Multi-tenant</span><span class="tag">Compliance</span>
+              </div>
+              <a href="https://www.refillagas.com/" target="_blank" rel="noopener" class="pill pill-dark">Visit site <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-            <div class="portfolio-badge">Live on Play Store</div>
-            <h3><a href="https://play.google.com/store/apps/details?id=com.nyashachiza.terraform&pcampaignid=web_share" target="_blank" rel="noopener">Terraform — Intelligent Fitness Training</a></h3>
-            <p>Full-stack mobile fitness app with AI-powered workout planning, social features (friends, activity feed, emoji reactions), notifications, equipment tracking, and real-time session updates. Built with React Native/Expo frontend and FastAPI backend.</p>
-            <div class="portfolio-tags">
-              <span class="tag">React Native</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Python</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Mobile</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="portfolio-card">
-            <div class="portfolio-icon">
-              <i class="fa fa-eye" aria-hidden="true"></i>
+          <article class="work work-lg tone-stone">
+            <div class="work-visual"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+            <div class="work-body">
+              <div class="work-meta"><span class="status status-live">Live on Play Store</span></div>
+              <h3><a href="https://play.google.com/store/apps/details?id=com.nyashachiza.terraform&pcampaignid=web_share" target="_blank" rel="noopener">Terraform — Intelligent Fitness Training</a></h3>
+              <p>Full-stack mobile fitness app with AI-powered workout planning, social features (friends, activity feed, emoji reactions), notifications, equipment tracking, and real-time session updates. Built with React Native/Expo frontend and FastAPI backend.</p>
+              <div class="tags">
+                <span class="tag">React Native</span><span class="tag">TypeScript</span><span class="tag">Python</span>
+                <span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.nyashachiza.terraform&pcampaignid=web_share" target="_blank" rel="noopener" class="pill pill-dark">View on Google Play <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
-            <h3><a href="https://github.com/nyashaChiza/facial-recognition" target="_blank" rel="noopener">Facial Recognition System</a></h3>
-            <p>Django-based facial recognition application leveraging machine learning for identity verification and access control — deployed for real-world use cases.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Django</span>
-              <span class="tag">Machine Learning</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="portfolio-card">
-            <div class="portfolio-icon">
-              <i class="fa fa-tachometer" aria-hidden="true"></i>
+          <article class="work tone-mist">
+            <div class="work-visual"><i class="fa fa-eye" aria-hidden="true"></i></div>
+            <div class="work-body">
+              <h3><a href="https://github.com/nyashaChiza/facial-recognition" target="_blank" rel="noopener">Facial Recognition System</a></h3>
+              <p>Django-based facial recognition application leveraging machine learning for identity verification and access control, deployed for real-world use cases.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Machine Learning</span></div>
             </div>
-            <h3><a href="https://github.com/nyashaChiza/gas-dispensary-pwa" target="_blank" rel="noopener">Gas Dispensary Management PWA</a></h3>
-            <p>Progressive Web Application for gas dispensary management with offline support, real-time transaction tracking, and automated reporting dashboards.</p>
-            <div class="portfolio-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">Django</span>
-              <span class="tag">PWA</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="portfolio-card">
-            <div class="portfolio-icon">
-              <i class="fa fa-medkit" aria-hidden="true"></i>
+          <article class="work tone-stone">
+            <div class="work-visual"><i class="fa fa-medkit" aria-hidden="true"></i></div>
+            <div class="work-body">
+              <h3><a href="https://github.com/nyashaChiza/medical-insurance-erp" target="_blank" rel="noopener">Medical Insurance ERP Integration</a></h3>
+              <p>End-to-end ERP workflow integrations for medical insurance providers, automating claims processing, compliance checks, and reporting pipelines.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">SnapLogic</span><span class="tag">API Integration</span></div>
             </div>
-            <h3><a href="https://github.com/nyashaChiza/medical-insurance-erp" target="_blank" rel="noopener">Medical Insurance ERP Integration</a></h3>
-            <p>End-to-end ERP workflow integrations for medical insurance providers, automating claims processing, compliance checks, and reporting pipelines.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Python</span>
-              <span class="tag">SnapLogic</span>
-              <span class="tag">API Integration</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="portfolio-card">
-            <div class="portfolio-icon">
-              <i class="fa fa-cog" aria-hidden="true"></i>
+          <article class="work tone-mist">
+            <div class="work-visual"><i class="fa fa-cog" aria-hidden="true"></i></div>
+            <div class="work-body">
+              <h3><a href="https://github.com/nyashaChiza/workforce-automation" target="_blank" rel="noopener">Workforce Automation Pipeline</a></h3>
+              <p>Python-driven automation and data engineering pipelines for workforce management and payroll reporting, eliminating significant manual processing overhead.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Celery</span><span class="tag">Redis</span></div>
             </div>
-            <h3><a href="https://github.com/nyashaChiza/workforce-automation" target="_blank" rel="noopener">Workforce Automation Pipeline</a></h3>
-            <p>Python-driven automation and data engineering pipelines for workforce management and payroll reporting — eliminating significant manual processing overhead.</p>
-            <div class="portfolio-tags">
-              <span class="tag">Python</span>
-              <span class="tag">Celery</span>
-              <span class="tag">Redis</span>
-            </div>
-          </div>
+          </article>
 
         </div>
-        <div class="portfolio-cta">
-          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" class="btn-outline">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            View All Projects on GitHub
-          </a>
+
+        <div class="center">
+          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" class="pill pill-light"><i class="fa fa-github" aria-hidden="true"></i> View all projects on GitHub</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Education -->
-      <section id="education" class="section">
-        <div class="section-label">Academic Background</div>
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-item">
-          <div class="edu-icon">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </div>
-          <div class="edu-content">
-            <h3>Bachelor of Information Technology</h3>
-            <div class="edu-institution">Harare Institute of Technology</div>
-            <div class="edu-date">2017 – 2021</div>
-          </div>
-        </div>
-
-        <h3 class="cert-heading">Certifications</h3>
-        <div class="cert-grid">
-          <div class="cert-item">
-            <i class="fa fa-certificate" aria-hidden="true"></i>
-            <span>Data Analysis with Python</span>
-          </div>
-          <div class="cert-item">
-            <i class="fa fa-certificate" aria-hidden="true"></i>
-            <span>SQL Certification</span>
-          </div>
-          <div class="cert-item">
-            <i class="fa fa-certificate" aria-hidden="true"></i>
-            <span>Data Warehouse Certification</span>
-          </div>
-          <div class="cert-item">
-            <i class="fa fa-certificate" aria-hidden="true"></i>
-            <span>JavaScript Algorithms &amp; Data Structures</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section">
-        <div class="section-label">Technical Profile</div>
-        <h2 class="section-title">Skills</h2>
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="eyebrow">Technical profile</div>
+        <h2 class="title">Skills &amp; tools</h2>
         <div class="skills-grid">
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Programming Languages</h3>
+          <div class="skill-card">
+            <h3>Programming Languages</h3>
             <div class="tags">
-              <span class="tag primary">Python</span>
-              <span class="tag primary">PHP</span>
-              <span class="tag primary">JavaScript</span>
-              <span class="tag primary">Dart</span>
-              <span class="tag primary">Java</span>
-              <span class="tag primary">C</span>
+              <span class="tag solid">Python</span><span class="tag solid">PHP</span><span class="tag solid">JavaScript</span>
+              <span class="tag solid">Dart</span><span class="tag solid">Java</span><span class="tag solid">C</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+          <div class="skill-card">
+            <h3>Frameworks &amp; Libraries</h3>
             <div class="tags">
-              <span class="tag">Django</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Flask</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">React</span>
-              <span class="tag">React Native</span>
-              <span class="tag">Expo</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Laravel</span>
-              <span class="tag">Flutter</span>
+              <span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Node.js</span>
+              <span class="tag">React</span><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Next.js</span>
+              <span class="tag">Laravel</span><span class="tag">Flutter</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Data &amp; Machine Learning</h3>
+          <div class="skill-card">
+            <h3>Data &amp; Machine Learning</h3>
             <div class="tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">TensorFlow</span>
-              <span class="tag">Scikit-learn</span>
-              <span class="tag">Pandas</span>
-              <span class="tag">Apache</span>
+              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">Apache</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">DevOps &amp; Cloud</h3>
+          <div class="skill-card">
+            <h3>DevOps &amp; Cloud</h3>
             <div class="tags">
-              <span class="tag">Docker</span>
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Vercel</span>
-              <span class="tag">Huawei Cloud</span>
-              <span class="tag">Celery</span>
-              <span class="tag">Redis</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">SQLAlchemy</span>
+              <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">AWS</span><span class="tag">Vercel</span>
+              <span class="tag">Huawei Cloud</span><span class="tag">Celery</span><span class="tag">Redis</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Integration Platforms</h3>
+          <div class="skill-card">
+            <h3>Integration Platforms</h3>
+            <div class="tags"><span class="tag">SnapLogic</span><span class="tag">NewgenOne</span></div>
+          </div>
+          <div class="skill-card">
+            <h3>Hard Skills</h3>
             <div class="tags">
-              <span class="tag">SnapLogic</span>
-              <span class="tag">NewgenOne</span>
+              <span class="tag">Version Control</span><span class="tag">API Development</span><span class="tag">System Integration</span>
+              <span class="tag">Software Testing</span><span class="tag">CI/CD</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Hard Skills</h3>
+          <div class="skill-card wide">
+            <h3>Soft Skills</h3>
             <div class="tags">
-              <span class="tag">Version Control</span>
-              <span class="tag">API Development</span>
-              <span class="tag">System Integration</span>
-              <span class="tag">Software Testing</span>
-              <span class="tag">CI/CD</span>
+              <span class="tag">Leadership</span><span class="tag">Problem Solving</span><span class="tag">Innovation</span>
+              <span class="tag">Critical Thinking</span><span class="tag">Adaptability</span><span class="tag">Mentorship</span>
             </div>
           </div>
-
-          <div class="skill-group">
-            <h3 class="skill-group-title">Soft Skills</h3>
-            <div class="tags">
-              <span class="tag soft">Leadership</span>
-              <span class="tag soft">Problem Solving</span>
-              <span class="tag soft">Innovation</span>
-              <span class="tag soft">Critical Thinking</span>
-              <span class="tag soft">Adaptability</span>
-              <span class="tag soft">Mentorship</span>
-            </div>
-          </div>
-
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
-  </div>
+    <!-- Education -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="eyebrow">Academic background</div>
+        <h2 class="title">Education</h2>
+        <div class="edu-grid">
+          <div class="edu-card">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <h3>Bachelor of Information Technology</h3>
+            <div class="edu-meta">Harare Institute of Technology · 2017 – 2021</div>
+          </div>
+          <ul class="certs">
+            <li><i class="fa fa-check" aria-hidden="true"></i> Data Analysis with Python</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> SQL Certification</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> Data Warehouse Certification</li>
+            <li><i class="fa fa-check" aria-hidden="true"></i> JavaScript Algorithms &amp; Data Structures</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="eyebrow light">Got a vision?</div>
+        <h2>Let's bring it to life.</h2>
+        <p>Open to engineering roles, collaborations and new products. Reach out and let's talk.</p>
+        <a href="mailto:nchizampeni@gmail.com" class="footer-mail">nchizampeni@gmail.com</a>
+        <div class="footer-meta">
+          <span><i class="fa fa-phone" aria-hidden="true"></i> +263 783 481 766</span>
+          <span><i class="fa fa-phone" aria-hidden="true"></i> +230 54 963 335</span>
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i> Ebene, Mauritius · Harare, Zimbabwe</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/nyasha-chizampeni-25437986/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://github.com/nyashaChiza" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="resume/Nyasha%20ChizampeniResume%202026.pdf" target="_blank" aria-label="Download CV"><i class="fa fa-download" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="copyright">&copy; 2026 Nyasha Chizampeni</div>
+    </div>
+  </footer>
 
   <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
+    // Smooth scroll with offset handled by CSS scroll-margin
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+        closeMenu();
       });
     });
 
-    // Scrollspy — use .main as root on desktop; viewport on mobile
-    const mainEl = document.querySelector('.main');
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    let scrollObserver;
-    function setupScrollspy() {
-      if (scrollObserver) scrollObserver.disconnect();
-      const isMobile = window.innerWidth <= 768;
-      scrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            navLinks.forEach(link => {
-              link.classList.remove('active');
-              if (link.getAttribute('href') === '#' + entry.target.id) {
-                link.classList.add('active');
-              }
-            });
-          }
-        });
-      }, { root: isMobile ? null : mainEl, threshold: 0.35 });
-      sections.forEach(s => scrollObserver.observe(s));
-    }
-    setupScrollspy();
-    window.addEventListener('resize', setupScrollspy);
-
-    // Mobile sidebar toggle
-    const hamburger = document.querySelector('.hamburger');
-    const sidebar = document.querySelector('.sidebar');
-    const overlay = document.querySelector('.sidebar-overlay');
-
-    function openSidebar() {
-      sidebar.classList.add('open');
-      overlay.classList.add('active');
-      hamburger.classList.add('open');
-      hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeSidebar() {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('active');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-
-    hamburger.addEventListener('click', () => {
-      sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
-    });
-
-    overlay.addEventListener('click', closeSidebar);
-
-    // Close sidebar after a nav link tap on mobile
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) closeSidebar();
+    // Scrollspy
+    const links = document.querySelectorAll('.nav-link');
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+        }
       });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => spy.observe(s));
+
+    // Mobile menu
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.getElementById('nav');
+    function closeMenu() {
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+    menuBtn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open);
     });
+
+    // Header shadow on scroll
+    const bar = document.querySelector('.topbar');
+    addEventListener('scroll', () => bar.classList.toggle('scrolled', scrollY > 8), { passive: true });
   </script>
 
 </body>
